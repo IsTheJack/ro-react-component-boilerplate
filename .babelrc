@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/typescript",
+    "@babel/react",
+    [
+      "react-app",
+      {
+        "absoluteRuntime": false
+      }
+    ]
+  ]
+}

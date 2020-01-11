@@ -13,11 +13,11 @@ it("renders without crashing (with minimum props)", () => {
 });
 
 it("call the on click function properly", () => {
-  const mockedClickFunction = jest.fn()
+  const mockedClickFunction = jest.fn();
   const { getByText } = render(<MyComponent onClick={mockedClickFunction} />);
   const element = getByText(/Hello World/i);
-  fireEvent.click(element)
-  expect(mockedClickFunction).toHaveBeenCalled()
+  fireEvent.click(element);
+  expect(mockedClickFunction).toHaveBeenCalled();
 });
 
 it("does not break when don't has onClick", () => {

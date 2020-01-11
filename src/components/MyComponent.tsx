@@ -4,14 +4,14 @@ interface Props {
   /**
    * Size of the button
    */
-  size?: 'regular' | 'large'
+  size?: "regular" | "large";
   /**
    * Callback to the click event
    */
-  onClick?: () => void | undefined
+  onClick?: () => void | undefined;
 }
 
-const MyComponent: React.FC<Props> = ({ size = 'regular', onClick }) => {
+const MyComponent: React.FC<Props> = ({ size = "regular", onClick }) => {
   const sizesStyle = {
     regular: "8px 12px",
     large: "12px 16px"
@@ -25,7 +25,7 @@ const MyComponent: React.FC<Props> = ({ size = 'regular', onClick }) => {
         background: "hotpink",
         borderRadius: "4px",
         color: "white",
-        padding: sizesStyle[size],
+        padding: sizesStyle[size]
       }}
     >
       Hello World
