@@ -16,10 +16,11 @@
     "typescript": "^3.7.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run styleguide",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-docgen-typescript": "^1.16.2",
+    "react-styleguidist": "^10.4.2"
   }
 }
